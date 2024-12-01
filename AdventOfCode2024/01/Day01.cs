@@ -16,17 +16,48 @@ public static class Day01
 
     private static void PartOne(bool isTest, string[] input)
     {
-        var result = 0;
-        
-        
-        
-        InputOutputHelper.WriteOutput(isTest, result);
+        var leftList = input.Select(line => int.Parse(line.Split("   ")[0])).ToList();
+        var rightList = input.Select(line => int.Parse(line.Split("   ")[1])).ToList();
+
+        leftList.Sort();
+        rightList.Sort();
+
+        var totalDistance = 0;
+        for (int i = 0; i < leftList.Count; i++)
+        {
+            totalDistance += Math.Abs(leftList[i] - rightList[i]);
+        }
+
+        InputOutputHelper.WriteOutput(isTest, totalDistance);
     }
     
     private static void PartTwo(bool isTest, string[] input)
     {
-        var result = 0;
-        
-        InputOutputHelper.WriteOutput(isTest, result);
+        var leftList = input.Select(line => int.Parse(line.Split("   ")[0])).ToList();
+        var rightList = input.Select(line => int.Parse(line.Split("   ")[1])).ToList();
+
+        var rightCount = new Dictionary<int, int>();
+        foreach (var number in rightList)
+        {
+            if (rightCount.ContainsKey(number))
+            {
+                rightCount[number]++;
+            }
+            else
+            {
+                rightCount[number] = 1;
+            }
+        }
+
+        var similarityScore = 0;
+        foreach (var number in leftList)
+        {
+            if (rightCount.ContainsKey(number))
+            {
+                similarityScore += number * rightCount[number];
+            }
+        }
+
+        InputOutputHelper.WriteOutput(isTest, similarityScore);
     }
 }
