@@ -18,6 +18,8 @@ public static class Day01
     {
         var result = 0;
         
+        
+        
         InputOutputHelper.WriteOutput(isTest, result);
     }
     

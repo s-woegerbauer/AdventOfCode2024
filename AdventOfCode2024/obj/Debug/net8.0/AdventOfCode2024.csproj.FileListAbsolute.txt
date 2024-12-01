@@ -1,0 +1,15 @@
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\bin\Debug\net8.0\AdventOfCode2024.exe
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\bin\Debug\net8.0\AdventOfCode2024.deps.json
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\bin\Debug\net8.0\AdventOfCode2024.runtimeconfig.json
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\bin\Debug\net8.0\AdventOfCode2024.dll
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\bin\Debug\net8.0\AdventOfCode2024.pdb
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.AssemblyInfoInputs.cache
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.AssemblyInfo.cs
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.csproj.CoreCompileInputs.cache
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.sourcelink.json
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.dll
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\refint\AdventOfCode2024.dll
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.pdb
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\AdventOfCode2024.genruntimeconfig.cache
+C:\Users\Simon\Documents\GitHub\AdventOfCode2024\AdventOfCode2024\obj\Debug\net8.0\ref\AdventOfCode2024.dll
