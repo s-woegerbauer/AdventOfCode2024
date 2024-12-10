@@ -10,8 +10,8 @@ public static class Program {
         // Day06.Solve();
         // Day07.Solve();
         // Day08.Solve();
-         Day09.Solve();
-        // Day10.Solve();
+        // Day09.Solve();
+         Day10.Solve();
         // Day11.Solve();
         // Day12.Solve();
         // Day13.Solve();
