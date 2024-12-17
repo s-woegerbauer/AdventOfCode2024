@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AdventOfCode2024
 {
@@ -13,7 +14,6 @@ namespace AdventOfCode2024
             PartOne(true, testInput);
             PartOne(false, input);
 
-            PartTwo(true, testInput);
             PartTwo(false, input);
         }
 
@@ -31,9 +31,9 @@ namespace AdventOfCode2024
         {
             return new long[]
             {
-                ParseRegister(input[0]), 
-                ParseRegister(input[1]), 
-                ParseRegister(input[2]) 
+                ParseRegister(input[0]),
+                ParseRegister(input[1]),
+                ParseRegister(input[2])
             };
         }
 
@@ -129,25 +129,46 @@ namespace AdventOfCode2024
                 _ => throw new ArgumentException("Invalid combo operand")
             };
         }
-        
+
         private static void PartTwo(bool isTest, string[] input)
         {
             var registers = InitializeRegisters(input);
             var program = ParseProgram(input[4]).Select(x => (long)x).ToList();
-            var lowerBound = 0;
-            
-            long result = 0;
-            for (long i = lowerBound; i < long.MaxValue; i += 8)
+            var factors = new long[program.Count];
+
+            while (true)
             {
-                var newProgram = ExecuteProgram(new long[] { i, 0, 0 }, program);
-                if (newProgram.SequenceEqual(program))
+                long a = 0;
+
+                for (int i = 0; i < factors.Length; i++)
                 {
-                    result = i;
+                    var factor = factors[i];
+                    a += (long)Math.Pow(8, i) * factor;
+                }
+
+                var output = ExecuteProgram(new long[] { a, 0, 0 }, program);
+
+                if (output.SequenceEqual(program))
+                {
+                    InputOutputHelper.WriteOutput(isTest, a.ToString());
                     break;
                 }
-            }
 
-            InputOutputHelper.WriteOutput(isTest, result);
+                for (int i = program.Count - 1; i >= 0; i--)
+                {
+                    if (output.Count < i)
+                    {
+                        factors[i]++;
+                        break;
+                    }
+
+                    if (output[i] != program[i])
+                    {
+                        factors[i]++;
+                        break;
+                    }
+                }
+            }
         }
     }
 }
