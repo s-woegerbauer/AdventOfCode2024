@@ -22,8 +22,8 @@ public static class Program {
         // Day18.Solve();
         // Day19.Solve();
         // Day20.Solve();
-         Day21.Solve();
-        // Day22.Solve();
+        // Day21.Solve();
+         Day22.Solve();
         // Day23.Solve();
         // Day24.Solve();
         // Day25.Solve();
